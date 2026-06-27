@@ -12,7 +12,7 @@ def get_weather():
         data = response.json()
 
         weather={
-            "main": data.get("name"),
+            "name": data.get("name"),
             "temp":data.get("main").get("temp"),
             "feels_like": data.get("main").get("feels_like"),
             "wind_speed": data.get("wind").get("speed"),
